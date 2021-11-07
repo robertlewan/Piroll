@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin: 24px 0;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.nav-item {
+    display: flex;
+    padding: 15px;
+    align-content: center;
+}
+
+.toggle-button {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    display: none;
+    align-items: center;
+    right: 10%;
+    top: 25px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+
+.nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+.active {
+    color: #10c9c3;
+}
+
+header {
+    background-image: none;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.about-header {
+    background-image: url("https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
+}
+
+header,
+.project {
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 120px 0;
+}
+
+header h1,
+.project h1 {
+    display: block;
+    padding-bottom: 30px;
+    font-family: Montserrat, sans-serif;
+    font-size: 38px;
+}
+
+header p,
+.project p {
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* About (About page) */
+
+
+.numbers {
+    background-color: #10c9c3;
+    display: grid;
+    grid-template: "a a a a";
+    padding: 100px;
+    justify-content: space-between;
+}
+
+.stats {
+    height: 42px;
+    grid-column-gap: 25px;
+    display: grid;
+    grid-template-areas: "img text"
+        "img text2";
+}
+
+.stats img {
+    grid-area: img;
+    height: 100%;
+}
+
+.stats h3 {
+    color: white;
+    grid-area: text;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.stats p {
+    color: white;
+    grid-area: text2;
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+.about-me {
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.photograph {
+    width: 50%;
+    justify-content: start;
+    display: flex;
+}
+
+.photograph img {
+    width: 100%;
+    height: auto;
+}
+
+.about-me-text {
+    padding: 140px;
+    width: 50%;
+}
+
+.about-me-text h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+}
+
+.about-me-text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    margin: 30px 0;
+}
+
+button {
+    padding: 20px 50px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 12px;
+    box-sizing: border-box;
+    background-color: #10c9c3;
+    color: white;
+    border: none;
+    border: 1px solid #10c9c3;
+}
+
+button:hover {
+    color: #10c9c3;
+    background-color: white;
+    border: 1px solid #10c9c3;
+    box-sizing: border-box;
+}
+
+.project {
+    padding-bottom: 100px;
+
+}
+
+/* Breakfast (Project single) */
+
+.breakfast {
+    display: flex;
+    background-color: #f6f6f6;
+
+}
+
+.breakfast-text {
+    width: 50%;
+    padding: 100px 150px 100px 100px;
+}
+
+.breakfast-text h2 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.breakfast-text .content {
+    margin-bottom: 40px;
+}
+
+.breakfast-img {
+    width: 50%;
+}
+
+.breakfast-img img {
+    width: 100%;
+}
+
+/* Gallery (Home page) */
+
+main {
+    margin: 0;
+}
+
+.grid1 {
+    display: grid;
+    width: 100%;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    vertical-align: middle;
+}
+
+.img-container img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Navigation (Project single) */
+
+.control {
+    display: flex;
+    padding: 45px 100px;
+    justify-content: space-between;
+}
+
+.control-item a {
+    display: flex;
+    height: 12px;
+}
+
+.control-item p {
+    padding: 0 15px;
+    font-family: Montserrat, 'sans-serif';
+    font-size: 12px;
+}
+
+/* Contact (Contact) */
+
+.contact {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 100px;
+}
+
+.contact h2 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 30px;
+}
+
+.contact .contact-info {
+    width: 40%;
+    padding-right: 10%;
+}
+
+.contact-info .content {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #787878;
+}
+
+strong {
+    color: black;
+}
+
+.contact-info p {
+    margin-top: 20px;
+    color: #787878;
+}
+
+.contact .contact-form {
+    width: 60%;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+.half-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name,
+#email {
+    width: 45%;
+}
+
+#title {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#message {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 15px;
+
+}
+
+input,
+textarea::placeholder {
+    font-size: 15px;
+    color: #787878;
+}
+
+/* Map */
+
+.map {
+    background-color: #f6f6f6;
+    padding: 0 100px 100px 100px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: "copyrights copyrights copyrights contact contact link1 link2 link3";
+    padding: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+}
+
+.copyrights {
+    grid-area: copyrights;
+}
+
+.copyrights h2 {
+    font-size: 18px;
+    font-family: Montserrat, 'sans-serif';
+    margin-bottom: 25px;
+}
+
+
+.contact-footer {
+    grid-area: contact;
+}
+
+.links {
+    grid-area: link1;
+}
+
+.links2 {
+    grid-area: link2;
+}
+
+.media {
+    grid-area: link3;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .grid1 {
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    }
+
+    footer {
+        grid-template-areas: "copyrights copyrights contact"
+            "link1 link2 link3";
+        grid-gap: 40px;
+        text-align: center;
+    }
+
+    nav {
+        padding: 0 10%;
+        margin: 10px 0;
+    }
+
+    .numbers {
+        grid-template-areas: "a a"
+            "a a";
+        grid-gap: 30px;
+        padding: 50px 100px;
+    }
+
+    footer {
+        padding: 10%;
+    }
+
+    .about-me {
+        display: block;
+    }
+
+    .photograph {
+        width: 100%;
+    }
+
+    .about-me-text {
+        width: 100%;
+        padding: 40px 100px;
+        text-align: center;
+    }
+
+    .project {
+        background-color: rgb(253, 208, 227);
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact .contact-form {
+        width: 100%;
+    }
+
+    .contact .contact-info {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 550px) {
+        .toggle-button {
+            display: flex;
+        }
+
+        nav {
+            padding: 0 10%;
+            margin: 10px 0;
+        }
+
+        .nav-item {
+            display: flex;
+            width: 100%;
+        }
+
+        .nav-menu {
+            display: none;
+            position: relative;
+            flex-direction: column;
+            width: 100%;
+            top: 50px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        .nav-menu.toggled {
+            display: flex;
+        }
+
+        header,
+        .project {
+            padding: 90px 10%;
+        }
+
+        .grid1 {
+            grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+        }
+
+        footer {
+            padding: 10%;
+            grid-template-areas: "copyrights copyrights copyright"
+                "contact contact contact"
+                "link1 link2 link3";
+            grid-gap: 40px;
+            text-align: left;
+        }
+
+        .numbers {
+            padding: 50px 10%;
+        }
+
+        .about-header {
+            color: white;
+        }
+
+        .contact {
+            padding: 30px 10%;
+        }
+
+        .map {
+            padding: 20px 10%;
+        }
+    }
+}

@@ -1,0 +1,565 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #787878;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.toggle-button {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    display: none;
+    align-items: center;
+    right: 10%;
+    top: 25px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.nav-item {
+    display: flex;
+    padding: 15px;
+    align-content: center;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    background-color: #f5f5f5;
+}
+
+.active {
+    color: #10c9c3;
+}
+
+/* Header */
+main {
+    background-image: url('./images/one-page/header-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main div {
+    display: flex;
+}
+
+.filler {
+    width: 60%;
+}
+
+header {
+    margin-top: 120px;
+    width: 40%;
+    padding-right: 100px;
+    padding-bottom: 200px;
+}
+
+header h1 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 38px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 40px 0;
+}
+
+button {
+    padding: 20px 50px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 12px;
+    box-sizing: border-box;
+    background-color: #10c9c3;
+    color: white;
+    border: 1px solid #10c9c3;
+}
+
+button:hover {
+    color: #10c9c3;
+    background-color: white;
+    border: 1px solid #10c9c3;
+    box-sizing: border-box;
+}
+
+/* About us */
+#about {
+    text-align: center;
+    padding: 100px 25%;
+}
+
+#about p {
+    margin: 40px 0;
+}
+
+#about h1 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 30px;
+}
+
+/* Skills */
+
+.skills-container {
+    background-image: url('./images/one-page/skills.jpg');
+    padding: 165px 100px;
+    background-size: cover;
+}
+
+.skills-container h1 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.skills-container p {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-container img {
+    margin-bottom: 40px;
+}
+
+/* Numbers */
+.numbers {
+    background-color: #10c9c3;
+    display: grid;
+    grid-template-areas: "a a a a";
+    padding: 100px;
+    justify-content: space-between;
+}
+
+.stats {
+    height: 42px;
+    grid-column-gap: 25px;
+    display: grid;
+    grid-template-areas: "img text"
+        "img text2";
+}
+
+.stats img {
+    grid-area: img;
+    height: 100%;
+}
+
+.stats h3 {
+    color: white;
+    grid-area: text;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+.stats p {
+    color: white;
+    grid-area: text2;
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "a a a a"
+        "a a a a"
+        "a a a a";
+}
+
+
+.img-container {
+    width: 100%;
+}
+
+.img-container img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.show-more {
+    font-size: 12px;
+    font-family: Montserrat, 'sans-serif';
+    color: #8e8e8e;
+    padding: 45px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Work process */
+
+#process {
+    padding: 100px;
+    text-align: center;
+}
+
+#process h1 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 30px;
+}
+
+#process p {
+    margin: 40px 0;
+}
+
+#process iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/* Services */
+
+#services {
+    background-color: #f5f5f5;
+    padding: 100px;
+    display: grid;
+    grid-template: 1fr 1fr /1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 50px;
+}
+
+#services h3 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background-color: #10c9c3;
+    color: white;
+    text-align: center;
+    padding: 170px 25% 60px 25%;
+}
+
+#testimonials h3 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 24px;
+}
+
+#testimonials p {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 12px;
+    margin-top: 35px;
+    margin-bottom: 105px;
+    color: white;
+}
+
+#testimonials img {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* clients */
+
+.clients {
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+/* contact */
+
+#project {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 100px 25%;
+}
+
+#project h1 {
+    font-family: Montserrat, 'sans-serif';
+    font-size: 30px;
+}
+
+#project p {
+    margin-top: 30px;
+    padding: 0 10%;
+}
+
+form {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.half-contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+#name,
+#email {
+    width: 47%;
+}
+
+#title {
+    width: 100%;
+    margin: 30px 0;
+}
+
+#message {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input,
+textarea {
+    padding: 15px;
+
+}
+
+input,
+textarea::placeholder {
+    font-size: 15px;
+    color: #787878;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-areas: "copyrights copyrights copyrights contact contact link1 link2 link3";
+    padding: 100px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+
+.copyrights h2 {
+    font-size: 18px;
+    font-family: Montserrat, 'sans-serif';
+    margin-bottom: 25px;
+    grid-area: copyrights;
+}
+
+.contact-footer {
+    grid-area: contact;
+}
+
+.links {
+
+    grid-area: link1;
+}
+
+.links2 {
+
+    grid-area: link2;
+}
+
+.media {
+
+    grid-area: link3;
+}
+
+@media screen and (max-width: 992px) {
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-item {
+        display: flex;
+        width: 100%;
+    }
+
+    .nav-menu {
+        display: none;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        top: 50px;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .nav-menu.toggled {
+        display: flex;
+    }
+
+    .skills-container {
+        background-image: none;
+        background-color: bisque;
+    }
+
+    .gallery {
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    }
+
+    footer {
+        grid-gap: 40px;
+        text-align: center;
+        display: grid;
+        grid-template-areas: "copyrights copyrights contact"
+            "link1 link2 link3";
+    }
+
+    nav {
+        padding: 0 10%;
+    }
+
+    .filler {
+        display: none;
+    }
+
+    header {
+        text-align: center;
+        width: 100%;
+        padding: 50px 10%;
+    }
+
+    header p {
+        color: black;
+    }
+
+    .numbers {
+        grid-template-areas: "a a"
+            "a a";
+        grid-gap: 30px;
+        padding: 50px 100px;
+    }
+
+    footer {
+        padding: 10%;
+    }
+
+    .about-me {
+        display: block;
+    }
+
+    .photograph {
+        width: 100%;
+    }
+
+    .about-me-text {
+        width: 100%;
+        padding: 40px 100px;
+        text-align: center;
+    }
+
+    .project {
+        background-color: rgb(253, 208, 227);
+    }
+
+    .contact {
+        display: block;
+    }
+
+    .contact .contact-form {
+        width: 100%;
+    }
+
+    .contact .contact-info {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        grid-template-areas: "copyrights copyrights contact"
+            "link1 link2 link3";
+        grid-gap: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills-container {
+        text-align: center;
+        padding: 150px 10%;
+    }
+
+    .skills-container img {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #process {
+        padding: 50px;
+    }
+
+    #process iframe {
+        height: 300px;
+    }
+
+    .clients {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .clients div {
+        margin: 20px;
+    }
+
+    #project {
+        padding: 100px 10%;
+    }
+
+    .numbers {
+        padding: 100px 30px;
+        gap: 80px;
+    }
+}
